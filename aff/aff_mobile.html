@@ -1,479 +1,623 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Republika - ASEAN Mitsubishi Electric Cup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-</head>
-
-<body>
-  <nav class="navbar">
-    <div class="navbar-top">
-      <a class="navbar-brand" href="#">
-        <img src="../image/logo-republika.png" alt="Republika Logo" />
-      </a>
-      <div class="input-group">
-        <input type="search" class="form-control" placeholder="Temukan Sesuatu..." aria-label="Search" />
-        <button class="btn btn-outline-light" type="button">
+  <body>
+    <nav class="navbar">
+      <div class="navbar-top">
+        <a class="navbar-brand" href="#">
+          <img src="../image/logo-republika.png" alt="Republika Logo" />
+        </a>
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Temukan Sesuatu..."
+            aria-label="Search"
+          />
+          <button class="btn-search" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+          <span class="toggle-track">
+            <i class="bi bi-sun-fill"></i>
+            <i class="bi bi-moon-stars-fill"></i>
+          </span>
+        </button>
+        <button class="menu-toggle">
+          <i class="bi bi-list"></i>
         </button>
       </div>
-      <button class="menu-toggle">
-        <i class="bi bi-list"></i>
-      </button>
+      <div class="nav-links">
+        <a class="nav-link" href="#">AMEERA</a>
+        <a class="nav-link" href="#">KHAZANAH</a>
+        <a class="nav-link" href="#">IQRA</a>
+        <a class="nav-link" href="#">NEWS</a>
+        <a class="nav-link" href="#">ANALISIS</a>
+        <a class="nav-link" href="#">EKONOMI</a>
+        <a class="nav-link" href="#">ESGNOW</a>
+        <a class="nav-link" href="#">VISUAL</a>
+        <a class="nav-link" href="#">ENGLISH</a>
+        <a class="nav-link" href="#">REPUBLIKA TV</a>
+        <a class="nav-link" href="#">INDEKS</a>
+      </div>
+    </nav>
+
+    <div class="header-section">
+      <h2 class="title" style="text-align: center">
+        ASEAN MITSUBISHI ELECTRIC CUP
+      </h2>
+      <div class="match-schedule">
+        <button class="schedule-nav prev" aria-label="Previous">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <div class="schedule-container">
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img
+                  src="../image/flag/indonesia.png"
+                  alt="Indonesia"
+                  class="flag"
+                />
+                <span>Indonesia</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/myanmar.png"
+                  alt="Myanmar"
+                  class="flag"
+                />
+                <span>Myanmar</span>
+              </div>
+            </div>
+          </div>
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="../image/flag/laos.png" alt="Laos" class="flag" />
+                <span>Laos</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/vietnam.png"
+                  alt="Vietnam"
+                  class="flag"
+                />
+                <span>Vietnam</span>
+              </div>
+            </div>
+          </div>
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img
+                  src="../image/flag/indonesia.png"
+                  alt="Indonesia"
+                  class="flag"
+                />
+                <span>Indonesia</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/myanmar.png"
+                  alt="Myanmar"
+                  class="flag"
+                />
+                <span>Myanmar</span>
+              </div>
+            </div>
+          </div>
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="../image/flag/laos.png" alt="Laos" class="flag" />
+                <span>Laos</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/vietnam.png"
+                  alt="Vietnam"
+                  class="flag"
+                />
+                <span>Vietnam</span>
+              </div>
+            </div>
+          </div>
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="../image/flag/laos.png" alt="Laos" class="flag" />
+                <span>Laos</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/vietnam.png"
+                  alt="Vietnam"
+                  class="flag"
+                />
+                <span>Vietnam</span>
+              </div>
+            </div>
+          </div>
+          <div class="match-card">
+            <div class="match-time">11 Des, 18.00 WIB</div>
+            <div class="match-teams">
+              <div class="team">
+                <img src="../image/flag/laos.png" alt="Laos" class="flag" />
+                <span>Laos</span>
+              </div>
+              <div class="team">
+                <img
+                  src="../image/flag/vietnam.png"
+                  alt="Vietnam"
+                  class="flag"
+                />
+                <span>Vietnam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="schedule-nav next" aria-label="Next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
     </div>
-    <div class="nav-links">
-      <a class="nav-link" href="#">AMEERA</a>
-      <a class="nav-link" href="#">KHAZANAH</a>
-      <a class="nav-link" href="#">IQRA</a>
-      <a class="nav-link" href="#">NEWS</a>
-      <a class="nav-link" href="#">ANALISIS</a>
-      <a class="nav-link" href="#">EKONOMI</a>
-      <a class="nav-link" href="#">ESGNOW</a>
-      <a class="nav-link" href="#">VISUAL</a>
-      <a class="nav-link" href="#">ENGLISH</a>
-      <a class="nav-link" href="#">REPUBLIKA TV</a>
-      <a class="nav-link" href="#">INDEKS</a>
-    </div>
-  </nav>
 
-  <div class="header-section">
-    <h2 class="title" style="text-align: center">
-      MITSUBISHI ELECTRIC CUP
-    </h2>
-    <div class="match-schedule">
-      <div class="schedule-container">
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/indonesia.png" alt="Indonesia" class="flag" />
-              <span>Indonesia</span>
+    <main class="main-container">
+      <section class="standings">
+        <h2 class="title" style="text-align: left">Klasemen</h2>
+        <div class="standings-container">
+          <div class="standings-group">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>MP</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>GF</th>
+                  <th>GA</th>
+                  <th>GD</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/thailand.png"
+                      alt="Thailand"
+                      class="flag"
+                    />
+                    <span>Thailand</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/cambodia.png"
+                      alt="Kamboja"
+                      class="flag"
+                    />
+                    <span>Kamboja</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/malaysia.png"
+                      alt="Malaysia"
+                      class="flag"
+                    />
+                    <span>Malaysia</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/singapore.png"
+                      alt="Singapura"
+                      class="flag"
+                    />
+                    <span>Singapura</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/east-timor.png"
+                      alt="Timor Leste"
+                      class="flag"
+                    />
+                    <span>Timor Leste</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="standings-group">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>MP</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>GF</th>
+                  <th>GA</th>
+                  <th>GD</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/indonesia.png"
+                      alt="Indonesia"
+                      class="flag"
+                    />
+                    <span>Indonesia</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img src="../image/flag/laos.png" alt="Laos" class="flag" />
+                    <span>Laos</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/myanmar.png"
+                      alt="Myanmar"
+                      class="flag"
+                    />
+                    <span>Myanmar</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/philippines.png"
+                      alt="Filipina"
+                      class="flag"
+                    />
+                    <span>Filipina</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="team-info">
+                    <img
+                      src="../image/flag/vietnam.png"
+                      alt="Vietnam"
+                      class="flag"
+                    />
+                    <span>Vietnam</span>
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>+10</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-section-container">
+        <h2 class="title" style="text-align: left">Visual</h2>
+        <div class="visual-layout">
+          <!-- Konten Utama 70% -->
+          <div class="visual-main-content">
+            <div class="visual-main-display">
+              <img
+                id="mainVisualImg"
+                src="../image/visual/1.jpg"
+                alt="Timnas Indonesia foto bersama sebelum laga"
+              />
+              <p id="mainVisualDesc" class="deskripsi">
+                Timnas Indonesia tampil penuh semangat dalam persiapan
+                menghadapi persaingan di ASEAN Mitsubishi Electric Cup. Dengan
+                kerja sama tim dan dukungan suporter, skuad Garuda terus
+                berjuang untuk meraih hasil terbaik di turnamen Asia Tenggara.
+              </p>
             </div>
-            <div class="team">
-              <img src="../image/flag/myanmar.png" alt="Myanmar" class="flag" />
-              <span>Myanmar</span>
+
+            <div class="visual-thumbnails" id="visualThumbnails">
+              <div class="thumb-item active" data-index="0">
+                <img src="../image/visual/1.jpg" alt="Thumbnail 1" />
+              </div>
+              <div class="thumb-item" data-index="1">
+                <img src="../image/visual/2.jpg" alt="Thumbnail 2" />
+              </div>
+              <div class="thumb-item" data-index="2">
+                <img src="../image/visual/3.jpg" alt="Thumbnail 3" />
+              </div>
+              <div class="thumb-item" data-index="3">
+                <img src="../image/visual/4.jpg" alt="Thumbnail 4" />
+              </div>
+              <div class="thumb-item" data-index="4">
+                <img src="../image/visual/5.jpg" alt="Thumbnail 5" />
+              </div>
+            </div>
+          </div>
+          <div class="visual-sidebar">
+            <div class="ads-box">
+              <span>Ads Space</span>
             </div>
           </div>
         </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/laos.png" alt="Indonesia" class="flag" />
-              <span>Laos</span>
+      </section>
+
+      <section class="news">
+        <h2 class="title" style="text-align: left">Newest</h2>
+        <div class="news-list-container">
+          <div class="news-container">
+            <img src="../image/6.jpg" alt="Berita" class="news-img" />
+            <div class="news-content">
+              <div class="news-upload">2 jam yang lalu</div>
+              <h5 class="news-title">
+                Timnas Indonesia Siap Hadapi Persaingan ASEAN Mitsubishi
+                Electric Cup
+              </h5>
             </div>
-            <div class="team">
-              <img src="/image/flag/vietnam.png" alt="Myanmar" class="flag" />
-              <span>Vietnam</span>
+          </div>
+          <div class="news-container">
+            <img src="../image/7.jpg" alt="Berita" class="news-img" />
+            <div class="news-content">
+              <div class="news-upload">2 jam yang lalu</div>
+              <h5 class="news-title">
+                Perjuangan Skuad Garuda Berlanjut di Turnamen Asia Tenggara
+              </h5>
+            </div>
+          </div>
+          <div class="news-container">
+            <img src="../image/8.jpg" alt="Berita" class="news-img" />
+            <div class="news-content">
+              <div class="news-upload">2 jam yang lalu</div>
+              <h5 class="news-title">
+                Kerja Sama Tim Jadi Kunci Indonesia di ASEAN Mitsubishi Electric
+                Cup
+              </h5>
             </div>
           </div>
         </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/indonesia.png" alt="Indonesia" class="flag" />
-              <span>Indonesia</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/myanmar.png" alt="Myanmar" class="flag" />
-              <span>Myanmar</span>
-            </div>
+      </section>
+
+      <section class="trending">
+        <h2 class="title" style="text-align: left">Trending</h2>
+        <div class="news-wrapper">
+          <div class="news-box">
+            <img src="../image/9.jpg" alt="Berita 1" class="news-image" />
+            <h3 class="news-title">
+              Timnas Indonesia Siap Bertarung di ASEAN Mitsubishi Electric Cup
+            </h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/10.jpg" alt="Berita 2" class="news-image" />
+            <h3 class="news-title">Skuad Garuda Terus Matangkan Persiapan</h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/11.jpg" alt="Berita 3" class="news-image" />
+            <h3 class="news-title">
+              Dukungan Suporter Jadi Semangat Timnas Indonesia
+            </h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/12.jpg" alt="Berita 4" class="news-image" />
+            <h3 class="news-title">
+              Indonesia Bidik Hasil Terbaik di Turnamen Asia Tenggara
+            </h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/13.jpg" alt="Berita 5" class="news-image" />
+            <h3 class="news-title">
+              Kekompakan Jadi Kunci Perjuangan Skuad Garuda
+            </h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/14.jpg" alt="Berita 6" class="news-image" />
+            <h3 class="news-title">
+              Persiapan Timnas Indonesia Terus Berlanjut
+            </h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/15.jpg" alt="Berita 7" class="news-image" />
+            <h3 class="news-title">Skuad Garuda Siap Hadapi Laga Penting</h3>
+          </div>
+          <div class="news-box">
+            <img src="../image/16.jpg" alt="Berita 8" class="news-image" />
+            <h3 class="news-title">
+              Indonesia Jaga Asa di ASEAN Mitsubishi Electric Cup
+            </h3>
           </div>
         </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/laos.png" alt="Indonesia" class="flag" />
-              <span>Laos</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/vietnam.png" alt="Myanmar" class="flag" />
-              <span>Vietnam</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/indonesia.png" alt="Indonesia" class="flag" />
-              <span>Indonesia</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/myanmar.png" alt="Myanmar" class="flag" />
-              <span>Myanmar</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/laos.png" alt="Indonesia" class="flag" />
-              <span>Laos</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/vietnam.png" alt="Myanmar" class="flag" />
-              <span>Vietnam</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/indonesia.png" alt="Indonesia" class="flag" />
-              <span>Indonesia</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/myanmar.png" alt="Myanmar" class="flag" />
-              <span>Myanmar</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-time">11 Des, 18.00 WIB</div>
-          <div class="match-teams">
-            <div class="team">
-              <img src="../image/flag/laos.png" alt="Indonesia" class="flag" />
-              <span>Laos</span>
-            </div>
-            <div class="team">
-              <img src="../image/flag/vietnam.png" alt="Myanmar" class="flag" />
-              <span>Vietnam</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </main>
 
-  <main class="main-container">
-    <section class="standings">
-      <h2 class="title" style="text-align: left">
-        KLASEMEN
-      </h2>
-      <div class="standings-container">
-        <div class="standings-group">
-          <table class="standings-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>MP</th>
-                <th>W</th>
-                <th>D</th>
-                <th>L</th>
-                <th>GF</th>
-                <th>GA</th>
-                <th>GD</th>
-                <th>PTS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/thailand.png" alt="Thailand" class="flag">
-                  <span>Thailand</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/cambodia.png" alt="Kamboja" class="flag">
-                  <span>Kamboja</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr></tr>
-              <td class="team-info">
-                <img src="../image/flag/malaysia.png" alt="Malaysia" class="flag">
-                <span>Malaysia</span>
-              </td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>10</td>
-              <td>0</td>
-              <td>+10</td>
-              <td>3</td>
-              </tr>
-              <tr></tr>
-              <td class="team-info">
-                <img src="../image/flag/singapore.png" alt="Singapura" class="flag">
-                <span>Singapura</span>
-              </td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>10</td>
-              <td>0</td>
-              <td>+10</td>
-              <td>3</td>
-              </tr>
-              <tr></tr>
-              <td class="team-info">
-                <img src="../image/flag/east-timor.png" alt="Timor Leste" class="flag">
-                <span>Timor Leste</span>
-              </td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>10</td>
-              <td>0</td>
-              <td>+10</td>
-              <td>3</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="standings-group">
-          <table class="standings-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>MP</th>
-                <th>W</th>
-                <th>D</th>
-                <th>L</th>
-                <th>GF</th>
-                <th>GA</th>
-                <th>GD</th>
-                <th>PTS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/indonesia.png" alt="Indonesia" class="flag">
-                  <span>Indonesia</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/laos.png" alt="Laos" class="flag">
-                  <span>Laos</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/myanmar.png" alt="Myanmar" class="flag">
-                  <span>Myanmar</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/philippines.png" alt="Filipina" class="flag">
-                  <span>Filipina</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td class="team-info">
-                  <img src="../image/flag/vietnam.png" alt="Vietnam" class="flag">
-                  <span>Vietnam</span>
-                </td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>10</td>
-                <td>0</td>
-                <td>+10</td>
-                <td>3</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
 
-    <section class="visual">
-      <h2 class="title" style="text-align: left">
-        VISUAL
-      </h2>
-      <div class="visual-wrapper">
-        <img src="../image/visual/foto-marselino-1.jpg" alt="Berita" class="visual-image">
-      </div>
-        <p class="deskripsi">
-          Lorem ipsum dolor sit amet consectetur.
-          Condimentum tincidunt nec sem eget suspendisse.
-          Neque sapien et mollis nunc risus et rhoncus id.
-        </p>
-        <div class="slider">
-          <img src="../image/visual/foto-marselino-1.jpg" alt="Gambar 1" class="slide-image">
-          <img src="../image/visual/foto-marselino-2.jpg" alt="Gambar 2" class="slide-image">
-          <img src="../image/visual/foto-marselino-3.jpg" alt="Gambar 3" class="slide-image">
-          <img src="../image/visual/foto-marselino-4.jpg" alt="Gambar 4" class="slide-image">
-          <img src="../image/visual/foto-marselino-1.jpg" alt="Gambar 1" class="slide-image">
-          <img src="../image/visual/foto-marselino-2.jpg" alt="Gambar 2" class="slide-image">
-          <img src="../image/visual/foto-marselino-3.jpg" alt="Gambar 3" class="slide-image">
-          <img src="../image/visual/foto-marselino-4.jpg" alt="Gambar 4" class="slide-image">
-        </div>
-      </div>
-      <div class="ads-box">
-      </div>
-    </section>
+        menuToggle.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
 
-    <section class="news">
-      <h2 class="title" style="text-align: left">
-        NEWEST
-      </h2>
-      <div class="news-container">
-        <img src="../image/foto-berita.jpg" alt="Berita" class="news-img">
-        <div class="news-content">
-          <div class="news-upload">
-            2 jam yang lalu
-          </div>
-          <h5 class="news-title">
-            Lorem ipsum dolor sit amet consectetur.
-            Ullamcorper enim non ut nulla risus dis tortor.
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".navbar")) {
+            navLinks.classList.remove("active");
+          }
+        });
 
-          </h5>
-        </div>
-      </div>
-      <div class="news-container">
-        <img src="../image/foto-berita.jpg" alt="Berita" class="news-img">
-        <div class="news-content">
-          <div class="news-upload">
-            2 jam yang lalu
-          </div>
-          <h5 class="news-title">
-            Lorem ipsum dolor sit amet consectetur.
-            Ullamcorper enim non ut nulla risus dis tortor.
+        const themeToggle = document.getElementById("themeToggle");
+        const root = document.documentElement;
+        const savedTheme = localStorage.getItem("theme");
+        const systemPrefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
 
-          </h5>
-        </div>
-      </div>
-      <div class="news-container">
-        <img src="../image/foto-berita.jpg" alt="Berita" class="news-img">
-        <div class="news-content">
-          <div class="news-upload">
-            2 jam yang lalu
-          </div>
-          <h5 class="news-title">
-            Lorem ipsum dolor sit amet consectetur.
-            Ullamcorper enim non ut nulla risus dis tortor.
+        if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+          root.setAttribute("data-theme", "dark");
+        }
 
-          </h5>
-        </div>
-      </div>
-    </section>
+        themeToggle.addEventListener("click", function () {
+          const isDark = root.getAttribute("data-theme") === "dark";
+          if (isDark) {
+            root.removeAttribute("data-theme");
+            localStorage.setItem("theme", "light");
+          } else {
+            root.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+          }
+        });
 
-    <section class="trending">
-      <h2 class="title" style="text-align: left">
-        TRENDING
-      </h2>
-      <div class="news-wrapper">
-        <div class="news-box">
-          <img src="../image/foto-berita.jpg" alt="Berita 1" class="news-image">
-          <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        </div>
-        <div class="news-box">
-          <img src="../image/foto-berita.jpg" alt="Berita 2" class="news-image">
-          <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        </div>
-        <div class="news-box">
-          <img src="../image/foto-berita.jpg" alt="Berita 3" class="news-image">
-          <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        </div>
-        <div class="news-box">
-          <img src="../image/foto-berita.jpg" alt="Berita 4" class="news-image">
-          <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+        const scheduleContainer = document.querySelector(".schedule-container");
+        const prevBtn = document.querySelector(".schedule-nav.prev");
+        const nextBtn = document.querySelector(".schedule-nav.next");
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+        if (prevBtn && nextBtn && scheduleContainer) {
+          prevBtn.addEventListener("click", () => {
+            scheduleContainer.scrollBy({ left: -260, behavior: "smooth" });
+          });
+          nextBtn.addEventListener("click", () => {
+            scheduleContainer.scrollBy({ left: 260, behavior: "smooth" });
+          });
+        }
 
-    menuToggle.addEventListener('click', function () {
-      navLinks.classList.toggle('active');
-    });
+        const visualData = [
+          {
+            img: "../image/visual/1.jpg",
+            desc: "Timnas Indonesia tampil penuh semangat dalam persiapan menghadapi persaingan di ASEAN Mitsubishi Electric Cup. Dengan kerja sama tim dan dukungan suporter, skuad Garuda terus berjuang untuk meraih hasil terbaik di turnamen Asia Tenggara.",
+          },
+          {
+            img: "../image/visual/2.jpg",
+            desc: "Selebrasi kemenangan mewarnai laga pembuka Garuda. Semangat juang tinggi ditunjukkan sejak menit awal hingga peluit panjang dibunyikan wasit.",
+          },
+          {
+            img: "../image/visual/3.jpg",
+            desc: "Sesi latihan intensif terus digelar untuk mematangkan strategi menghadapi lawan-lawan tangguh di fase grup ASEAN Mitsubishi Electric Cup.",
+          },
+          {
+            img: "../image/visual/4.jpg",
+            desc: "Dukungan penuh dari suporter yang memadati tribun menjadi energi tambahan bagi skuad Garuda di setiap laga kandang.",
+          },
+          {
+            img: "../image/visual/5.jpg",
+            desc: "Arahan taktik dari pelatih di pinggir lapangan menjadi kunci perubahan strategi Indonesia di babak kedua.",
+          },
+        ];
 
-    document.addEventListener('click', function (event) {
-      if (!event.target.closest('.navbar')) {
-        navLinks.classList.remove('active');
-      }
-    });
+        const mainImg = document.getElementById("mainVisualImg");
+        const mainDesc = document.getElementById("mainVisualDesc");
+        const thumbItems = document.querySelectorAll(".thumb-item");
 
-    const slideImages = document.querySelectorAll('.slide-image');
-    const visualImage = document.querySelector('.visual-image');
+        thumbItems.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            mainImg.src = visualData[index].img;
+            mainDesc.textContent = visualData[index].desc;
 
-    slideImages.forEach(image => {
-      image.addEventListener('click', function() {
-        slideImages.forEach(img => img.style.opacity = '0.5');
-        
-        this.style.opacity = '1';
-        
-        visualImage.src = this.src;
-        
-        visualImage.style.transition = 'opacity 0.3s ease';
-        visualImage.style.opacity = '0';
-        setTimeout(() => {
-          visualImage.style.opacity = '1';
-        }, 50);
+            thumbItems.forEach((t) => t.classList.remove("active"));
+            thumb.classList.add("active");
+          });
+        });
       });
-    });
-  });
-</script>
-</body>
-
+    </script>
+  </body>
 </html>
