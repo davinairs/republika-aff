@@ -303,7 +303,6 @@ body {
   height: 15px;
   object-fit: cover;
   border-radius: 2px;
-  border: 1px solid var(--border);
 }
 
 .standings-container {
